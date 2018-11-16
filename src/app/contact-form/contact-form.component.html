@@ -31,7 +31,7 @@
   <label>
     Dietary preferences:
     <select id="dietaryPreferences">
-      <option *ngFor="let pref of dietaryPrefOpts" [ngValue]="pref">{{ pref }}</option>
+      <option *ngFor="let pref of dietaryPrefOpts" value="{{pref}}">{{ pref }}</option>
     </select>
   </label>
 
