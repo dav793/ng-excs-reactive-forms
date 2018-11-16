@@ -1,18 +1,20 @@
 
 export class Contact {
 
-  firstName: string;
-  lastName: string;
+  fullName: string;
+  email: string;
   dietaryPreferences: string;
   isMarried: string;
   ageRange: string;
+  addresses: Address[];
 
   constructor(data: any) {
-    this.firstName = data.firstName || '';
-    this.lastName = data.lastName || '';
+    this.fullName = data.fullName || '';
+    this.email = data.email || '';
     this.dietaryPreferences = data.dietaryPreferences || '';
     this.isMarried = data.isMarried || '';
     this.ageRange = data.ageRange || '';
+    this.addresses = data.addresses || [];
   }
 
   static get DietaryPreferences(): string[] {
@@ -33,6 +35,22 @@ export class Contact {
       '60-75',
       'Over 75'
     ];
+  }
+
+}
+
+export class Address {
+
+  building: string;
+  street: string;
+  city: string;
+  zip: string;
+
+  constructor(data: {[key: string]: string}) {
+    this.building = data.building || '';
+    this.street = data.street || '';
+    this.city = data.city || '';
+    this.zip = data.zip || '';
   }
 
 }
