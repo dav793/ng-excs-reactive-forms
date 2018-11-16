@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, FormArray, FormBuilder, Validators} from '@angular/forms';
 
-import { DietaryPreferenceValidationService } from './dietary-preference-validation.service';
+import { DietaryPreferenceValidationService } from '../shared/services/dietary-preference-validation.service';
 
-import { Contact, Address } from './contact.model';
-import { legalAgeValidator } from './age-range.validator';
-import { DietaryPreferenceValidator } from './dietary-preference.validator';
+import { Contact, Address } from '../shared/models/contact.model';
+import { legalAgeValidator } from '../shared/validators/age-range.validator';
+import { DietaryPreferenceValidator } from '../shared/validators/dietary-preference.validator';
 
 /**
  * Guía de trabajo:

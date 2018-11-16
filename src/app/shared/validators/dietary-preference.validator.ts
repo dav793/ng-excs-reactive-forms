@@ -3,7 +3,7 @@ import { AbstractControl, AsyncValidator, ValidationErrors } from '@angular/form
 import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
-import { DietaryPreferenceValidationService } from './dietary-preference-validation.service';
+import { DietaryPreferenceValidationService } from '../services/dietary-preference-validation.service';
 
 @Injectable({ providedIn: 'root' })
 export class DietaryPreferenceValidator {
