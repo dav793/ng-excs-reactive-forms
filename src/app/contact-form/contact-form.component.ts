@@ -116,7 +116,6 @@ export class ContactFormComponent implements OnInit {
       ageRange:             [ model.ageRange,             [legalAgeValidator()] ],
       addresses:            this.formBuilder.array(addressesGroups)
     });
-    // dietaryPreferenceValidator
 
     return group;
 
